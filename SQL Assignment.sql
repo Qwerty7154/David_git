@@ -155,7 +155,7 @@ SELECT
 FROM dbo.Customer AS C
 WHERE C.Country <> 'USA'
 GROUP BY C.Country
-HAVING COUNT(C.Id) > 9
+HAVING COUNT(C.Id) >= 9
 ORDER BY COUNT(C.Id) DESC;
 --19. List customer with average orders between $1000 and $1200. 
 SELECT
